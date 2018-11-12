@@ -3,5 +3,5 @@ class ChangeCompletedToTasks < ActiveRecord::Migration[5.2]
     change_column :tasks, :completed, :boolean, :default => true
   end
 
-  end
+
 end
