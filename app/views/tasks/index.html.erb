@@ -3,9 +3,9 @@
 <ul>
 <% @tasks.each do |task| %>
 <li>
-  <%=task.title %>
-   <% link_to 'Show', task_path(task) %>
+  <h2>Name: <%= link_to task.title, task_path(task)%>
 
+</h2>
 
 </li>
 <% end %>
