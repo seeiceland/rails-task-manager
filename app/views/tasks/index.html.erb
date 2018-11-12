@@ -1,0 +1,16 @@
+<h1>Tasks</h1>
+
+<ul>
+<% @tasks.each do |task| %>
+<li>
+  <%=task.name %>
+<!--   <% link_to 'Show', restaurant_path(restaurant.id) %>
+  <% link_to 'Edit', edit_restaurant_path(restaurant.id) %>
+    <% link_to 'Delete', restaurant_path(restaurant.id), method: :delete %> -->
+
+
+</li>
+<% end %>
+</ul>
+
+  <% link_to 'Add Restaurant', new_restaurant_path %>
